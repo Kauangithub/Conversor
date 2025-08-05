@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(bg.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+hr {
+    border: rgba(255, 255, 255, 0.3) 1px solid;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(7px);
+    padding: 30px;
+    border-radius: 15px;
+    border: rgba(255, 255, 255, 0.2) 1px solid;
+    color: #fff;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    height: 50px;
+    transition: .3s ease-in-out;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+#num {
+    min-width: 275px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#num:focus {
+    outline: 0;
+    border: #368dd4 3px solid;
+}
+
+#btn {
+    padding: 10px 20px;
+    background-color: #368dd4;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: #fff;
+    color: #368dd4;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#resultado {
+    font-size: 18px;
+    font-weight: bold;
+}

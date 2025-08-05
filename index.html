@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor</title>
-</head>
-<body>
-    <main>
-        <form class="form">
-            <input id="num" type="number" placeholder="Insira seu valor em decimal" required>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Conversor</title>
+    </head>
 
-            <input id="btn" type="submit">
+    <body>
+        <main>
+            <form class="form">
+                <h1>Conversor de valor decimal para binário</h1>
+                <hr>
+                <div class="input-group">
+                    <input id="num" type="number" placeholder="Insira seu valor em decimal" required>
+                    <input id="btn" type="submit">
+                </div>
 
-            <div> O resultado é <span id="resultado"></span></div>
-        </form>
-    </main>
-    <script src="script.js"></script>
-</body>
+                <div> O resultado é <span id="resultado"></span></div>
+            </form>
+        </main>
+        <script src="script.js"></script>
+    </body>
 </html>
