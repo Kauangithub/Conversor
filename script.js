@@ -1,13 +1,9 @@
-// console.log("Conversão iniciada") // Descomente para depuração
-
 let num = document.getElementById('num')
 
 num.addEventListener('input', Conversor)
 
 let botao = document.getElementById('btn')
 botao.addEventListener('click', Conversor)
-
-
 
 let result = document.getElementById('resultado')
 
@@ -29,7 +25,6 @@ function Conversor(event) {
                 console.log(resto);
                 num = Math.trunc(num / 2);
                 binario.push(resto)
-                
             }
             if (resto !== undefined) {
                 result.textContent = resto;
@@ -39,14 +34,9 @@ function Conversor(event) {
             result.textContent =  binario2
             console.log(binario2)
             console.log(typeof(binario))
-            
-
         } else {
             alert('insira números válidos')
         }  
- 
     }
-    
-        }
-        
+        }  
 }
