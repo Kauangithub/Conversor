@@ -7,50 +7,42 @@ console.log(typeof(numlista))
 
 let result = document.getElementById('resultado')
 
-function Bina_deci(numlista) {
-    window.
 
+function Conversor(event) {
     let num = parseFloat(document.getElementById('num').value)
-    numlista.
-    dra
-    console.log(typeof(numlista))
+
+    for (i in num) {
+
+        let decimal = []
+    }
+
+    if (isNaN(num)) {
+        result.textContent = ''
+    } else {
+        if (num === 0) {
+            result.textContent = 0
+        } else {
+            event.preventDefault()
+        let resto;
+        let binario = []
+        if (typeof(num) === 'number') {
+            while (num > 0) {
+                resto = Math.trunc(num % 2).toString();
+                console.log(resto);
+                num = Math.trunc(num / 2);
+                binario.push(resto)
+            }
+            if (resto !== undefined) {
+                result.textContent = resto;
+            } 
+            console.log(binario)
+            let binario2 = binario.reverse().join("")
+            result.textContent =  binario2
+            console.log(binario2)
+            console.log(typeof(binario))
+        } else {
+            alert('insira números válidos')
+        }  
+    }
+        }  
 }
-
-// function Conversor(event) {
-//     let num = parseFloat(document.getElementById('num').value)
-
-//     for (i in num) {
-
-//         let decimal = []
-//     }
-
-//     if (isNaN(num)) {
-//         result.textContent = ''
-//     } else {
-//         if (num === 0) {
-//             result.textContent = 0
-//         } else {
-//             event.preventDefault()
-//         let resto;
-//         let binario = []
-//         if (typeof(num) === 'number') {
-//             while (num > 0) {
-//                 resto = Math.trunc(num % 2).toString();
-//                 console.log(resto);
-//                 num = Math.trunc(num / 2);
-//                 binario.push(resto)
-//             }
-//             if (resto !== undefined) {
-//                 result.textContent = resto;
-//             } 
-//             console.log(binario)
-//             let binario2 = binario.reverse().join("")
-//             result.textContent =  binario2
-//             console.log(binario2)
-//             console.log(typeof(binario))
-//         } else {
-//             alert('insira números válidos')
-//         }  
-//     }
-//         }  
-// }
