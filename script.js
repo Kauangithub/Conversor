@@ -1,6 +1,6 @@
 let num = document.getElementById('num')
 
-num.addEventListener('input', Bina_deci)
+num.addEventListener('input', Conversor)
 let numlista = [].push(num)
 console.log(numlista)
 console.log(typeof(numlista))
@@ -11,11 +11,7 @@ let result = document.getElementById('resultado')
 function Conversor(event) {
     let num = parseFloat(document.getElementById('num').value)
 
-    for (i in num) {
-
-        let decimal = []
-    }
-
+ 
     if (isNaN(num)) {
         result.textContent = ''
     } else {
